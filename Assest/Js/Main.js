@@ -1,10 +1,4 @@
-/**
-* Template Name: BizLand
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
     "use strict";
   
@@ -196,7 +190,7 @@ $(window).on('load',function(){
      */
     window.addEventListener('load', () => {
       AOS.init({
-        duration: 1000,
+        duration: 1300,
         easing: 'ease-in-out',
         once: true,
         mirror: true

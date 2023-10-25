@@ -744,25 +744,28 @@ a.pay_onlinefy svg {
 
 /* Visa Apply */
 
+.About{
+  padding: 100px 0px
+}
 .VisaNavPills{
-    justify-content: center;
-    margin: 0px auto 80px 0px !important;
+  justify-content: center;
+  margin: 0px auto 80px 0px !important;
 }
 .VisaNavPills .nav-item .nav-link {
-    display: inline-block;
-    margin: 0 15px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 1.25rem;
-    padding: 8px 10px;
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-    transition: all 450ms ease-in-out;
-    font-weight: 600;
+  display: inline-block;
+  margin: 0 15px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 8px 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  font-weight: 600;
 }
 .VisaNavPills .nav-item .nav-link.active{
-    color: #29ABE2;
-    position: relative;
+  color: #29ABE2;
+  position: relative;
 }
 .VisaNavPills .nav-item .nav-link.active::after{
   position: absolute;
@@ -820,6 +823,10 @@ span.section-id {
   float: left;
   margin-top: 2px;
   margin-right: 10px;
+}
+.abut_img{
+  max-width: 100%;
+  height: auto;
 }
 .box-list p {
   overflow: hidden;
@@ -1330,7 +1337,7 @@ span.section-id {
 .Ielts_Partnership{
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 30px;
 }
 .Ielts_Partnership h2 {
   color: #29abe2;
@@ -1341,7 +1348,6 @@ span.section-id {
 
 .partnerimg img{
   width: 100%;
-  max-width: 85%;
 }
 .Ielts_Partnership h6{
   font-size: 20px;
@@ -1381,7 +1387,7 @@ span.section-id {
   color: #fff;
   background-image: url(../Images/downarow.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 12% 80%;
   background-position: right;
 }
 .trainingForms .form-select option{
@@ -1562,15 +1568,17 @@ span.section-id {
 
 .testim .cont div .img img {
   display: block;
-  width: 100px;
-  height: 100px;
-  margin: auto;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  height: 100%;
+  margin: 0 auto;
   border-radius: 50%;
 }
 
 .testim .cont div h2 {
   color: #29ABE2;
-  font-size: 1em;
+  font-size: 25px;
   margin: 15px 0;
 }
 
@@ -2087,11 +2095,9 @@ span.section-id {
 .subscribe-content-box {
   position: relative;
   padding: 45px 70px 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
   align-content: center;
-  flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.10);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -2604,3 +2610,352 @@ span.section-id {
   margin-left: 5px;
   
 }
+
+
+/* Responsive  */
+
+@media only screen and (max-width: 1800px){
+  .About {
+    padding: 45px 0px;
+  }
+  .box-list p {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .h3-lg {
+    font-size: 2.0rem;
+  }
+  .ComonBtn a {
+    font-size: 14px;
+  }
+  .Applytop h2 {
+    font-size: 2.25rem;
+  }
+  .qulityTitle h2 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .qulityPara p {
+    font-size: 14px;
+  } 
+  .image_block_two .image-shape .shape-3 {
+    right: 85px;
+    top: 215px;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #EC4E4F;
+  }
+  .EasySteps h2 {
+    font-size: 32px;
+  }
+  .topTittle span {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .WorkStepsCircle .inner-box .count-text {
+    font-size: 16px;
+  }
+  .WorkStepsCircle .inner-box .count-text span {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .WorkStepsCircle .inner-box h3 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .chooseHeading h6 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .whyChooseUsData {
+    gap: 35px;
+  }
+  .topTittle h6 {
+    font-size: 30px;
+  }
+  .topTittle p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testim .cont div p {
+    font-size: 14px;
+  }
+  .Ielts_Partnership h2, .trainingForms h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+}
+
+@media only screen and (max-width: 1399px){
+
+  .qulityTitle h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .Univercity h2 {
+    font-size: 15px;
+  }
+  .flagsname h6 {
+    font-size: 16px;
+  }
+  .WorkStepsCircle .inner-box {
+    width: 235px;
+    height: 235px;
+  }
+  .WorkStepsCircle .inner-box h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .WorkStepsCircle .inner-box .count-text {
+    width: 75px;
+    height: 75px;
+    padding-top: 20px;
+  }
+  .WorkStepsCircle .inner-box .count-text span {
+    font-size: 15px;
+    line-height: 12px;
+  }
+  .WorkStepsCircle .inner-box .count-text::before {
+    width: 104px;
+    height: 104px;
+    left: -13px;
+    top: -13px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1199px){
+
+  .box-list p {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+  .abut_img {
+    max-width: 80%;
+  }
+  span.section-id {
+    margin-bottom: 5px;
+  }
+  .h3-lg {
+    font-size: 1rem;
+  }
+  .ApplyBox h4 {
+    font-size: 18px;
+  }
+  .QualityEducations {
+    background-size: 295px 445px;
+  }
+  .QualityEducationsTwo {
+    background-size: 300px 240px;
+  }
+  .image_block_two .image-shape .shape-1 {
+    left: 19px;
+    bottom: 55px;
+    width: 130px;
+    height: 130px;
+  }
+  .image_block_two .image-shape .shape-2 {
+    right: 75px;
+    top: 105px;
+    width: 130px;
+    height: 130px;
+  }
+  .image_block_two .image-shape .shape-3 {
+    right: 45px;
+    top: 170px;
+    width: 110px;
+    height: 110px;
+  }
+  .WorkStepsCircle .inner-box {
+    width: 180px;
+    height: 180px;
+  }
+  .WorkStepsCircle .inner-box .count-text {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .WorkStepsCircle .inner-box .count-text span {
+    font-size: 14px;
+    line-height: 8px;
+  }
+  .WorkStepsCircle .inner-box .count-text::before {
+    width: 90px;
+    height: 90px;
+  }
+  .chooseHeading h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .subscribe-content-box {
+    padding: 32px 30px 32px;
+  }
+  .subscribe-title h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .subscribe-title p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .clients_videos {
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+  }
+
+}
+
+
+@media only screen and (max-width: 991px){
+
+  .item img {
+    width: 100%;
+    height: 75vh;
+  }
+  .caption-txt h2 {
+    font-size: 2.75rem;
+  }
+  .VisaNavPills {
+    margin: 0px auto 60px 0px !important;
+  }
+  .Visa_Contents {
+    grid-template-columns: 1fr;
+    grid-row-gap: 60px;
+  }
+  .box-list p {
+    font-size: 15px;
+  }
+  .abut_img {
+    max-width: 45%;
+  }
+  .img-fluid {
+    max-width: 45%;
+  }
+  .box-list p {
+    font-size: 13px;
+  }
+  .Ask_Adviser {
+    padding-bottom: 50px;
+  } 
+  .about-4-txt {
+    padding: 50px 0px 0px 0px;
+  }
+  .callAgent {
+    justify-content: center;
+  }
+  .ComonBtn a {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .callAgent h6 {
+    font-size: 16px;
+  }
+  .VisaApply {
+    padding: 50px 0px;
+  }
+  .Applytop h2 {
+    font-size: 1.25rem;
+  }
+  .ApplyBox h4 {
+    font-size: 14px;
+  }
+  .qulityTitle h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .lookQuality {
+    gap: 12px;
+    padding: 20px 0px;
+  }
+  .qulityPara p {
+    font-size: 11px;
+  }
+  .image_block_two .image-box img {
+    height: 100%;
+    min-height: 310px;
+  }
+  .image_block_two .image-shape .shape-1 {
+    left: 20px;
+    bottom: 15px;
+    width: 100px;
+    height: 100px;
+  }
+  .image_block_two .image-shape .shape-2 {
+    right: 50px;
+    top: 70px;
+    width: 112px;
+    height: 112px;
+  }
+  .image_block_two .image-shape .shape-3 {
+    right: 60px;
+    top: 140px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #EC4E4F;
+  }
+  .flagsname {
+    gap: 5px;
+  }
+  .flagsname img {
+    width: 60px;
+    height: 60px;
+  }
+  .WorkStepsCircle {
+    padding: 50px 0px 0px 0px;
+    gap: 130px;
+    flex-direction: column;
+  }
+  .WorkStepsCircle .inner-box::after {
+    top: inherit;
+    bottom: -85px;
+    right: inherit;
+    transform: rotate(90deg);
+  }
+  .WorkStepsCircle .inner-box {
+    width: 235px;
+    height: 235px;
+  }
+  .WorkStepsCircle .inner-box .count-text {
+    width: 75px;
+    height: 75px;
+    font-size: 16px;
+  } 
+  .WorkStepsCircle .inner-box .count-text::before {
+    width: 104px;
+    height: 104px;
+  }
+  .WorkStepsCircle .inner-box h3 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .visaApplyCard2 {
+    gap: 45px;
+  }
+  .visaApplyCard {
+    grid-gap: 20px;
+    padding: 60px 0px 60px 0px;
+  }
+  .whyChooseUsData {
+    gap: 15px;
+    padding-left: 10px;
+  }
+  .swiper-slide {
+    max-height: 225px;
+  }
+  .topTittle p {
+    max-width: 80%;
+  }
+  .testim .cont div p {
+    font-size: 12px;
+  }
+
+
+
+}
+
+
+
