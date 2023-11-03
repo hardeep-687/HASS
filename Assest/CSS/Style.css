@@ -3220,6 +3220,44 @@ span.section-id {
     font-size: 12px;
   }
 
+  .earth {
+    width: 100px;
+    height: 100px;
+    background-size: 234px;
+  }
+  .plane {
+    max-width: 57%;
+    left: 0;
+    right: 0;
+  }
+  .plane-img {
+    max-width: 85%;
+  }
+  .iata_code {
+    font-size: 3.5rem;
+    top: 45px;
+  }
+  .arrival_city {
+    right: -252px;
+  }
+  .departure_city {
+    left: -260px;
+  }
+  .caption-txt h2 {
+    font-size: 26px;
+  }
+  .caption-txt {
+    top: 65px;
+  }
+
+  .testim .arrow {
+    display: none;
+  }
+
+
+
+
+
 }
 
 @media only screen and (max-width: 375px){
@@ -3276,35 +3314,7 @@ span.section-id {
     left: -8%;
   }
 
-  .earth {
-    width: 100px;
-    height: 100px;
-    background-size: 234px;
-  }
-  .plane {
-    max-width: 57%;
-    left: 0;
-    right: 0;
-  }
-  .plane-img {
-    max-width: 85%;
-  }
-  .iata_code {
-    font-size: 3.5rem;
-    top: 45px;
-  }
-  .arrival_city {
-    right: -252px;
-  }
-  .departure_city {
-    left: -260px;
-  }
-  .caption-txt h2 {
-    font-size: 26px;
-  }
-  .caption-txt {
-    top: 65px;
-  }
+ 
 
 
 
