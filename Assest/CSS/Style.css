@@ -508,7 +508,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #ccc;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -2187,17 +2187,20 @@ span.section-id {
   outline: -webkit-focus-ring-color auto 0px;
 }
 
-
-
 .FooterMiddle{
   position: relative;
   display: block;
   padding: 90px 0 100px;
 }
+.FooterData{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
 .single-footer-widget {
-  position: relative;
-  display: block;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .single-footer-widget.martop10{
   margin-top: 10px;
@@ -2234,7 +2237,6 @@ span.section-id {
   text-transform: capitalize;
 }
 
-
 .single-footer-widget .our-company-info {
   position: relative;
   display: block;
@@ -2244,10 +2246,6 @@ span.section-id {
 }
 
 .footer-social-links {
-  position: relative;
-  display: block;
-}
-.footer-social-links ul{
   overflow: hidden;
   display: flex !important;
   gap: 30px !important;
@@ -2255,16 +2253,11 @@ span.section-id {
   align-items: center !important;
   padding: 0;
 }
-.footer-social-links ul li{
-  position: relative;
-  display: inline-block;
-  float: left;
-  /* margin-right: 10px; */
-}
-.footer-social-links ul li:last-child{
+
+.footer-social-links a:last-child{
   margin-right: 0;
 }
-.footer-social-links ul li a{
+.footer-social-links  a{
   position: relative;
   display: block;
   height: 40px;
@@ -2278,7 +2271,7 @@ span.section-id {
   transition: all 200ms linear;
   transition-delay: 0.1s;
 }
-.footer-social-links ul li a:hover{
+.footer-social-links a:hover{
   color: #29ABE2;
   border-color: #29ABE2;
 }
@@ -2359,19 +2352,18 @@ span.section-id {
 
 
 .single-footer-widget .footer-contact-info{
-  position: relative;
-  display: block;
-  margin-top: -1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .single-footer-widget .footer-contact-info ul{
-  position: relative;
-  display: block;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .single-footer-widget .footer-contact-info ul li{
-  position: relative;
-  display: block;
-  /* margin-bottom: 35px; */
+  display: flex;
+  align-items: center;
 }
 .single-footer-widget .footer-contact-info ul li:last-child{
   margin-bottom: 0;
@@ -2390,11 +2382,17 @@ span.section-id {
 }
 .single-footer-widget .footer-contact-info ul li .text h4{
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
   margin-bottom: 0;
+}
+.single-footer-widget .footer-contact-info ul li .text a{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 
 .thm-clr {
@@ -2483,6 +2481,9 @@ span.section-id {
 }
 .footer-menu ul li a:hover{
   color: #29ABE2;
+}
+.d-nn{
+  display: none;
 }
 
 /* img animation  */
@@ -2953,9 +2954,362 @@ span.section-id {
     font-size: 12px;
   }
 
-
+  .FooterData {
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 70px;
+  }
 
 }
 
+
+@media only screen and (max-width: 767px){
+
+  .VisaNavPills {
+    gap: 22px;
+  }
+  .abut_img {
+    max-width: 65%;
+  }
+  .img-fluid {
+    max-width: 60%;
+  }
+  .visaApplyCard {
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+  }
+  .visaApplyCard2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+  }
+  .image_block_two .image-shape .shape-2 {
+    right: 80px;
+    top: 140px;
+  }
+  .image_block_two .image-shape .shape-3 {
+    right: 70px;
+    top: 190px;
+    width: 125px;
+    height: 125px;
+    border: 8px solid #EC4E4F;
+  }
+  .qulityTitle h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .qulityPara p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .qulityPara {
+    padding: 5px 0px 34px 0px;
+  }
+  .Univercity h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .uniflag {
+    padding: 30px 0px 0px 0px;
+    gap: 25px;
+    justify-content: center;
+  }
+  .QualityEducationsTwo {
+    background-size: 220px 160px;
+  }
+  .QualityEducations {
+    background-size: 280px 350px;
+  }
+  .whyChooseUsData {
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  .clients_videos {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .topTittle p {
+    font-size: 13px;
+    max-width: 100% !important;
+  }
+  .testim .cont div p {
+    font-size: 11px;
+    width: 100%;
+  }
+  .testim .cont div .img img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  .Ielts_Partnership h2, .trainingForms h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .iltspartner {
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 70px 0px;
+  }
+  .contBTN {
+    text-align: center;
+  }
+  .subscribe-content-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+  .subscribe-title p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .subscribe-box {
+    max-width: 327px;
+    margin: 0 auto;
+  }
+  .subscribe-form input[type="email"] {
+    height: 45px;
+    border-radius: 6px;
+  }
+  .subscribe-form button {
+    font-size: 21px;
+    line-height: 32px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .subscribe-content-box {
+    padding: 20px 20px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .d-nn{
+    display: block;
+  }
+  .d-bb{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+
+  .caption-txt h2 {
+    font-size: 1.75rem;
+  }
+  .caption-txt h4 {
+    font-size: 16px;
+  }
+  .scrolled-offset {
+    margin-top: 0px;
+  } 
+  .item img {
+    height: 65vh;
+  }
+  .VisaNavPills .nav-item .nav-link {
+    font-size: 16px;
+    padding: 0px 0px 5px 0px ;
+  } 
+  .VisaNavPills {
+    gap: 10px;
+  }
+  .box-list p {
+    font-size: 12px;
+  }
+  span.section-id {
+    text-align: center;
+  }
+  .h3-lg {
+    text-align: center;
+  }
+  .sucess_Story_Img {
+    width: 100%;
+    max-width: 330px;
+  }  
+  .client {
+    text-align: center;
+  }
+  .SuccessStotry {
+    padding: 55px 0px;
+  }
+  .arrival_city {
+    right: 40px;
+  }
+  .caption-txt {
+    left: 8%;
+  }
+  .departure_city {
+    left: 23px;
+  }
+  .iata_code {
+    font-size: 4rem;
+    opacity: 0.5;
+    top: 100px;
+  }
+  .applyitems img {
+    max-width: 135px;
+    max-height: 135px;
+  }
+  .EasySteps h2 {
+    font-size: 26px;
+  }
+  .logo a img {
+    max-height: 60px !important;
+  }
+  .QualityEducations {
+    background-size: 165px 215px;
+  }
+  .QualityEducationsTwo {
+    background-size: 150px 105px;
+  }
+  .Univercity h2 {
+    font-size: 18px;
+  }
+  .qulityTitle h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .chooseHeading h6 {
+    font-size: 14px;
+  }
+  .box-list-icon {
+    margin-top: -1px;
+  }
+  .testim .cont div p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .topTittle p {
+    line-height: 20px;
+  }
+  .copyright-text p {
+    font-size: 14px;
+    line-height: 0px;
+  }
+  .footer-bottom .outer-box {
+    padding: 8px 0;
+  }
+  .footer-menu ul {
+    margin: 0;
+  }
+  .footer-menu ul li a {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+}
+
+
+@media only screen and (max-width: 412px){
+
+  .item img {
+    height: 50vh;
+  }
+  .VisaNavPills {
+    margin: 0px auto 18px 0px !important;
+  }
+  .Applytop h2 {
+    line-height: 28px;
+  }
+  .FooterData {
+    grid-template-columns: 1fr;
+  } 
+  .topTittle h6 {
+    font-size: 25px;
+  }
+  .testim .cont div h2 {
+    margin: 40px 0;
+  }
+  .subscribe-title p {
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+
+  .QualityEducationsTwo {
+    background-size: 0;
+  }
+  .sucess_Story_Img a.play-btn {
+    right: -19px;
+    bottom: 20px;
+  }
+  .play-btn {
+    width: 60px;
+    height: 60px
+  }
+  .WorkStepsCircle .inner-box {
+    width: 200px;
+    height: 200px;
+  }
+  .WorkStepsCircle .inner-box h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .qulityPara p {
+    font-size: 11px;
+  }
+  .qulityTitle h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .Univercity h2 {
+    font-size: 16px;
+  }
+  .qulityPara {
+    padding: 5px 0px 20px 0px;
+  }
+  .uniflag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flagsname {
+    gap: 5px;
+  }
+  .EasySteps h2 {
+    font-size: 22px;
+  }
+  .ChooseTittle {
+    padding-bottom: 45px;
+  }
+  .play-btn::before {
+    width: 70px;
+    height: 70px;
+    top: -10%;
+    left: -8%;
+  }
+
+  .earth {
+    width: 100px;
+    height: 100px;
+    background-size: 234px;
+  }
+  .plane {
+    max-width: 57%;
+    left: 0;
+    right: 0;
+  }
+  .plane-img {
+    max-width: 85%;
+  }
+  .iata_code {
+    font-size: 3.5rem;
+    top: 45px;
+  }
+  .arrival_city {
+    right: -252px;
+  }
+  .departure_city {
+    left: -260px;
+  }
+  .caption-txt h2 {
+    font-size: 26px;
+  }
+  .caption-txt {
+    top: 65px;
+  }
+
+
+
+
+
+}
 
 
