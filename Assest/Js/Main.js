@@ -173,8 +173,8 @@
       // Loader 
 $(window).on('load',function(){
   setTimeout(function(){ 
-  $('.page-loader').fadeOut('slow');
-  },2000);
+  $('.page-loader').fadeOut('fast');
+  },1000);
 });
 
  /**

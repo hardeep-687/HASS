@@ -869,7 +869,7 @@ span.section-id {
 /* Ask_Adviser */
 
 .Ask_Adviser{
-  padding-top: 40px;
+  padding: 100px 0px;
 }
 
 
@@ -1122,6 +1122,29 @@ span.section-id {
   font-weight: 700;
   line-height: 30px;
 }
+
+/* EventsSec */
+
+.EventsSec{
+  padding: 100px 0px;
+  height: 100%;
+}
+
+.eventsData{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 20px;
+  padding-top: 50px;
+}
+.eventitems img{
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+}
+
+
 
 /* Success Story */
 
